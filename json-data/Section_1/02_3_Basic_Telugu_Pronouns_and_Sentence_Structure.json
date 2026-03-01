@@ -1,0 +1,139 @@
+[
+    {
+        "level": 1,
+        "type": "vocabulary",
+        "label": "Basic Vocabulary",
+        "description": "Key third-person pronouns and nouns used in the lesson.",
+        "items": [
+            {
+                "telugu": "వాళ్లు",
+                "phonetic": "Vāḷḷu",
+                "english": "They (people)"
+            },
+            {
+                "telugu": "విద్యార్థులు",
+                "phonetic": "vidyārthulu",
+                "english": "students"
+            },
+            {
+                "telugu": "అతను",
+                "phonetic": "Atanu",
+                "english": "He (distant)"
+            },
+            {
+                "telugu": "ఇతను",
+                "phonetic": "Itanu",
+                "english": "He (near)"
+            },
+            {
+                "telugu": "ఆవిడ",
+                "phonetic": "Āviḍa",
+                "english": "She (formal/distant)"
+            },
+            {
+                "telugu": "ఈవిడ",
+                "phonetic": "Īviḍa",
+                "english": "She (formal/near)"
+            },
+            {
+                "telugu": "ఆమె",
+                "phonetic": "Āme",
+                "english": "She (neutral/distant)"
+            },
+            {
+                "telugu": "ఈమె",
+                "phonetic": "Īme",
+                "english": "She (neutral/near)"
+            },
+            {
+                "telugu": "అది",
+                "phonetic": "Adi",
+                "english": "It/That (distant)"
+            },
+            {
+                "telugu": "ఇది",
+                "phonetic": "Idi",
+                "english": "It/This (near)"
+            },
+            {
+                "telugu": "కారు",
+                "phonetic": "Cāru",
+                "english": "Car"
+            },
+            {
+                "telugu": "విద్యార్థి",
+                "phonetic": "vidyārthi",
+                "english": "student"
+            },
+            {
+                "telugu": "నేను",
+                "phonetic": "Nēnu",
+                "english": "I"
+            }
+        ]
+    },
+    {
+        "level": 2,
+        "type": "fillblank",
+        "label": "Fill in the Blank",
+        "description": "Test your understanding of proximity-based pronouns and sentence structure.",
+        "items": [
+            {
+                "id": "pronoun_near",
+                "prompt": "When a person is standing right next to you, you use _____ to say 'He'.",
+                "blank": "Itanu",
+                "phonetic": "Itanu",
+                "options": [
+                    "Atanu",
+                    "Itanu",
+                    "Vāḷḷu",
+                    "Āyana"
+                ],
+                "explanation": "In Telugu, the 'E' sound (letter 'I') denotes proximity (near/this), while the 'A' sound (letter 'A') denotes distance (far/that)."
+            },
+            {
+                "id": "plural_noun",
+                "prompt": "To make the English loanword 'Car' plural in Telugu, we add the suffix _____.",
+                "blank": "lu",
+                "phonetic": "lu",
+                "options": [
+                    "ru",
+                    "nu",
+                    "lu",
+                    "vi"
+                ],
+                "explanation": "To make most nouns plural in Telugu, we typically add the 'lu' suffix."
+            }
+        ]
+    },
+    {
+        "level": 3,
+        "type": "tips",
+        "label": "Grammar & Tips",
+        "description": "Essential grammatical rules for understanding Telugu pronouns and proximity.",
+        "items": [
+            {
+                "id": "proximity_rule",
+                "title": "The 'A' vs 'I' Sound Rule",
+                "body": "Most 3rd-person pronouns in Telugu come in pairs based on distance. Pronouns starting with 'A' refer to someone or something distant (like 'That'), while pronouns starting with 'I' refer to someone or something close (like 'This').",
+                "example": {
+                    "english": "That is a student / This is a student",
+                    "telugu": "అతను విద్యార్థి / ఇతను విద్యార్థి",
+                    "phonetic": "Atanu vidyārthi / Itanu vidyārthi"
+                },
+                "category": "Grammar"
+            },
+            {
+                "id": "loanword_pluralization",
+                "title": "Pluralizing English Loanwords",
+                "body": "When using English words in Telugu, we often append a vowel like 'u' to the end to adapt them to Telugu phonology before adding grammatical suffixes like the plural 'lu'.",
+                "example": {
+                    "english": "Car / Cars",
+                    "telugu": "కారు / కారులు",
+                    "phonetic": "Cāru / Cārulu"
+                },
+                "category": "Vocabulary"
+            }
+        ]
+    }
+]

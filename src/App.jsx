@@ -1,14 +1,29 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useSpeech } from "./hooks/useSpeech";
+import { useProgress } from "./hooks/useProgress";
 import Sidebar from "./components/Sidebar";
 import LevelTabs from "./components/LevelTabs";
 import PhraseCard from "./components/PhraseCard";
+import FillBlankCard from "./components/FillBlankCard";
+import TipCard from "./components/TipCard";
 import { CATEGORIES } from "./data/index";
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState(null);
   const [activeLevel, setActiveLevel] = useState(1);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [progressVersion, setProgressVersion] = useState(0); // bump to force re-reads
+  const { getLevelProgress, getLevelCorrect, resetAll, resetCategory } = useProgress();
+
+  const handleResetAll = useCallback(() => {
+    resetAll();
+    setProgressVersion(v => v + 1);
+  }, [resetAll]);
+
+  const handleResetCategory = useCallback((catId) => {
+    resetCategory(catId);
+    setProgressVersion(v => v + 1);
+  }, [resetCategory]);
   const { supported } = useSpeech();
 
   const category = CATEGORIES.find((c) => c.id === activeCategory);
@@ -30,6 +45,8 @@ export default function App() {
         onSelectCategory={handleSelectCategory}
         mobileOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
+        onResetAll={handleResetAll}
+        onResetCategory={handleResetCategory}
       />
 
       <div className="main-content">
@@ -113,6 +130,10 @@ export default function App() {
                 levels={category.data}
                 activeLevel={activeLevel}
                 onSelectLevel={setActiveLevel}
+                categoryId={activeCategory}
+                getLevelProgress={getLevelProgress}
+                getLevelCorrect={getLevelCorrect}
+                progressVersion={progressVersion}
               />
 
               {/* Level Header */}
@@ -140,12 +161,39 @@ export default function App() {
                 </div>
               )}
 
-              {/* Phrase Cards */}
+              {/* Section Content — rendered by type */}
               {levelData && (
-                <div className="phrases-grid">
-                  {levelData.items.map((item, index) => (
-                    <PhraseCard key={item.id} item={item} index={index} />
-                  ))}
+                <div key={`${activeCategory}-${activeLevel}`}>
+                  {levelData.type === "vocabulary" && (
+                    <div className="phrases-grid">
+                      {levelData.items.map((item, index) => (
+                        <PhraseCard key={item.id} item={item} index={index} />
+                      ))}
+                    </div>
+                  )}
+
+                  {levelData.type === "fillblank" && (
+                    <div className="fillblank-list">
+                      {levelData.items.map((item, index) => (
+                        <FillBlankCard
+                          key={item.id}
+                          item={item}
+                          index={index}
+                          categoryId={activeCategory}
+                          level={activeLevel}
+                          onAnswer={() => setProgressVersion(v => v + 1)}
+                        />
+                      ))}
+                    </div>
+                  )}
+
+                  {levelData.type === "tips" && (
+                    <div className="tips-list">
+                      {levelData.items.map((item, index) => (
+                        <TipCard key={item.id} item={item} index={index} />
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
 

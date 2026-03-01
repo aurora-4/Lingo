@@ -5,10 +5,11 @@ export default function PhraseCard({ item, index }) {
     const { speak, speaking } = useSpeech();
     const [activeSpeakId, setActiveSpeakId] = useState(null);
 
-    const isThisSpeaking = speaking && activeSpeakId === item.id;
+    const itemKey = item.id ?? `vocab-${index}`;
+    const isThisSpeaking = speaking && activeSpeakId === itemKey;
 
     const handleSpeak = () => {
-        setActiveSpeakId(item.id);
+        setActiveSpeakId(itemKey);
         speak(item.telugu, { rate: 0.75, lang: "en-IN" });
         setTimeout(() => setActiveSpeakId(null), 4000);
     };
@@ -30,10 +31,12 @@ export default function PhraseCard({ item, index }) {
                 </button>
             </div>
 
-            <div className="card-telugu">{item.telugu}</div>
-            <div className="card-phonetic">/{item.phonetic}/</div>
+            {/* Phonetic is the primary visual element */}
+            <div className="card-phonetic-primary">{item.phonetic}</div>
 
-            <div className="card-divider" />
+            {/* Telugu script is NOT rendered — used only for TTS in speak() above */}
+
+            {(item.usage || item.tip) && <div className="card-divider" />}
 
             <div className="card-footer">
                 {item.usage && (

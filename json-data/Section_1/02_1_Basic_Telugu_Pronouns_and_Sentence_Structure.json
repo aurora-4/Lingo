@@ -1,0 +1,133 @@
+[
+    {
+        "level": 1,
+        "type": "vocabulary",
+        "label": "Basic Vocabulary",
+        "description": "Fundamental Telugu pronouns and nouns for forming simple sentences.",
+        "items": [
+            {
+                "telugu": "నేను",
+                "phonetic": "Nēnu",
+                "english": "I"
+            },
+            {
+                "telugu": "నువ్వు",
+                "phonetic": "Nuvvu",
+                "english": "You (Informal/Singular)"
+            },
+            {
+                "telugu": "మీరు",
+                "phonetic": "Mīru",
+                "english": "You (Formal/Plural)"
+            },
+            {
+                "telugu": "మనము",
+                "phonetic": "Manamu",
+                "english": "We (Inclusive)"
+            },
+            {
+                "telugu": "మేము",
+                "phonetic": "Mēmu",
+                "english": "We (Exclusive)"
+            },
+            {
+                "telugu": "విద్యార్థి",
+                "phonetic": "Vidyārthi",
+                "english": "Student"
+            },
+            {
+                "telugu": "విద్యార్థులు",
+                "phonetic": "Vidyārthulu",
+                "english": "Students"
+            }
+        ]
+    },
+    {
+        "level": 2,
+        "type": "fillblank",
+        "label": "Fill in the Blank",
+        "description": "Practice applying the correct pronouns and suffixes in simple sentences.",
+        "items": [
+            {
+                "id": "q1",
+                "prompt": "Translate 'I am a student' using the person marker.",
+                "blank": "Nēnu vidyārthi___",
+                "phonetic": "ni",
+                "options": [
+                    "ni",
+                    "vi",
+                    "amu",
+                    "lu"
+                ],
+                "explanation": "The suffix 'ni' is the 1st person marker used exclusively with 'Nēnu' (I)."
+            },
+            {
+                "id": "q2",
+                "prompt": "Translate 'We are students' (Inclusive).",
+                "blank": "Manamu vidyārthul___",
+                "phonetic": "amu",
+                "options": [
+                    "ni",
+                    "vi",
+                    "amu",
+                    "lu"
+                ],
+                "explanation": "When using 'Manamu' or 'Mēmu' (We), the suffix 'amu' is added to the plural noun."
+            },
+            {
+                "id": "q3",
+                "prompt": "Translate 'You are a student' (Informal).",
+                "blank": "Nuvvu vidyārthi___",
+                "phonetic": "vi",
+                "options": [
+                    "ni",
+                    "vi",
+                    "amu",
+                    "lu"
+                ],
+                "explanation": "The suffix 'vi' is the person marker used with the informal singular 'Nuvvu' (You)."
+            }
+        ]
+    },
+    {
+        "level": 3,
+        "type": "tips",
+        "label": "Grammar & Tips",
+        "description": "Key grammatical rules for sentence structure in Telugu.",
+        "items": [
+            {
+                "id": "tip1",
+                "title": "Absence of Auxiliary Verbs",
+                "body": "Unlike English, simple Telugu sentences do not use auxiliary verbs like 'am', 'is', or 'are'.",
+                "example": {
+                    "english": "Raj is a student.",
+                    "telugu": "రాజ్ విద్యార్థి",
+                    "phonetic": "Rāj vidyārthi"
+                },
+                "category": "Structure"
+            },
+            {
+                "id": "tip2",
+                "title": "Inclusive vs. Exclusive 'We'",
+                "body": "Telugu distinguishes between 'Manamu' (including the listener) and 'Mēmu' (excluding the listener) when saying 'we'.",
+                "example": {
+                    "english": "We are going to the classroom.",
+                    "telugu": "మేము తరగతి గదికి వెళ్తున్నాము",
+                    "phonetic": "Mēmu taragati gadiki vel-tunnāmu"
+                },
+                "category": "Pronouns"
+            },
+            {
+                "id": "tip3",
+                "title": "Making Words Plural",
+                "body": "To make a singular noun plural, add '-lu' or '-ulu' to the word, similar to adding 's' or 'es' in English.",
+                "example": {
+                    "english": "Students",
+                    "telugu": "విద్యార్థులు",
+                    "phonetic": "Vidyārthulu"
+                },
+                "category": "Vocabulary"
+            }
+        ]
+    }
+]

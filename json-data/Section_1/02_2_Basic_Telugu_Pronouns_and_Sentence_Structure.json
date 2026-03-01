@@ -1,0 +1,197 @@
+[
+    {
+        "level": 1,
+        "type": "vocabulary",
+        "label": "Basic Vocabulary",
+        "description": "Essential nouns and pronouns used in simple Telugu sentences.",
+        "items": [
+            {
+                "telugu": "నేను",
+                "phonetic": "Nēnu",
+                "english": "I"
+            },
+            {
+                "telugu": "మనము",
+                "phonetic": "Manamu",
+                "english": "We (Inclusive - including the listener)"
+            },
+            {
+                "telugu": "మేము",
+                "phonetic": "Mēmu",
+                "english": "We (Exclusive - excluding the listener)"
+            },
+            {
+                "telugu": "నువ్వు",
+                "phonetic": "Nuvvu",
+                "english": "You (Singular/Informal)"
+            },
+            {
+                "telugu": "మీరు",
+                "phonetic": "Mīru",
+                "english": "You (Plural/Formal)"
+            },
+            {
+                "telugu": "అతను",
+                "phonetic": "Atanu",
+                "english": "He (Neutral)"
+            },
+            {
+                "telugu": "ఆయన",
+                "phonetic": "Āyana",
+                "english": "He (Formal/Older)"
+            },
+            {
+                "telugu": "వాడు",
+                "phonetic": "Vāḍu",
+                "english": "He (Informal/Younger)"
+            },
+            {
+                "telugu": "ఆమె",
+                "phonetic": "Āme",
+                "english": "She (Neutral)"
+            },
+            {
+                "telugu": "ఆవిడ",
+                "phonetic": "Āviḍa",
+                "english": "She (Formal/Older)"
+            },
+            {
+                "telugu": "అది",
+                "phonetic": "Adi",
+                "english": "She (Informal) / It / That"
+            },
+            {
+                "telugu": "వాళ్ళు",
+                "phonetic": "Vāḷḷu",
+                "english": "They (People)"
+            },
+            {
+                "telugu": "అవి",
+                "phonetic": "Avi",
+                "english": "They (Objects/Non-human)"
+            },
+            {
+                "telugu": "విద్యార్థి",
+                "phonetic": "Vidyārthi",
+                "english": "Student"
+            },
+            {
+                "telugu": "విద్యార్థులు",
+                "phonetic": "Vidyārthulu",
+                "english": "Students"
+            }
+        ]
+    },
+    {
+        "level": 2,
+        "type": "fillblank",
+        "label": "Fill in the Blank",
+        "description": "Practice sentence structure and person markers.",
+        "items": [
+            {
+                "id": "q1",
+                "prompt": "I am a student.",
+                "blank": "Nēnu vidyārthi-",
+                "phonetic": "ni",
+                "options": [
+                    "ni",
+                    "vi",
+                    "mu",
+                    "lu"
+                ],
+                "explanation": "When using 'Nēnu' (I), the noun often takes the person marker '-ni'."
+            },
+            {
+                "id": "q2",
+                "prompt": "You (singular/informal) are a student.",
+                "blank": "Nuvvu vidyārthi-",
+                "phonetic": "vi",
+                "options": [
+                    "ni",
+                    "vi",
+                    "mu",
+                    "ru"
+                ],
+                "explanation": "When using 'Nuvvu' (You), the noun takes the person marker '-vi'."
+            },
+            {
+                "id": "q3",
+                "prompt": "We (inclusive) are students.",
+                "blank": "Manamu vidyārthu-___",
+                "phonetic": "lamu",
+                "options": [
+                    "ni",
+                    "vi",
+                    "lamu",
+                    "lu"
+                ],
+                "explanation": "With 'Manamu' (We inclusive), the plural noun 'vidyārthulu' changes to 'vidyārthulamu' using the marker '-amu'."
+            },
+            {
+                "id": "q4",
+                "prompt": "He (Neutral) is a student.",
+                "blank": "Atanu ___",
+                "phonetic": "vidyārthi",
+                "options": [
+                    "vidyārthini",
+                    "vidyārthi",
+                    "vidyārthivi",
+                    "vidyārthulu"
+                ],
+                "explanation": "Third-person pronouns (like Atanu) and 'Mīru' (Formal You) do not require person markers in simple 'is/am/are' sentences."
+            }
+        ]
+    },
+    {
+        "level": 3,
+        "type": "tips",
+        "label": "Grammar & Tips",
+        "description": "Key concepts regarding pronouns, plurality, and formality in Telugu.",
+        "items": [
+            {
+                "id": "tip1",
+                "title": "Inclusive vs. Exclusive 'We'",
+                "body": "Telugu distinguishes between including the listener ('Manamu') and excluding the listener ('Mēmu').",
+                "example": {
+                    "english": "We are champions (Me and You).",
+                    "telugu": "మనము ఛాంపియన్లము",
+                    "phonetic": "Manamu championlamu"
+                },
+                "category": "Pronouns"
+            },
+            {
+                "id": "tip2",
+                "title": "Person Markers",
+                "body": "First and second person singular/plural pronouns often require a matching suffix (marker) on the noun. Third-person pronouns and 'Mīru' (Formal You) usually do not.",
+                "example": {
+                    "english": "I am a student.",
+                    "telugu": "నేను విద్యార్థిని",
+                    "phonetic": "Nēnu vidyārthi-ni"
+                },
+                "category": "Grammar"
+            },
+            {
+                "id": "tip3",
+                "title": "Plurality with '-lu'",
+                "body": "To make a noun plural in Telugu, you generally add the suffix '-lu'.",
+                "example": {
+                    "english": "Students",
+                    "telugu": "విద్యార్థులు",
+                    "phonetic": "Vidyārthulu"
+                },
+                "category": "Grammar"
+            },
+            {
+                "id": "tip4",
+                "title": "Formality Levels",
+                "body": "Telugu has strict formality levels for 'He' and 'She'. 'Āyana/Āviḍa' are formal, 'Atanu/Āme' are neutral, and 'Vāḍu/Adi' are informal/younger.",
+                "example": {
+                    "english": "He is a student (Formal).",
+                    "telugu": "ఆయన విద్యార్థి",
+                    "phonetic": "Āyana vidyārthi"
+                },
+                "category": "Social Context"
+            }
+        ]
+    }
+]

@@ -1,0 +1,167 @@
+[
+    {
+        "level": 1,
+        "type": "vocabulary",
+        "label": "Basic Vocabulary",
+        "description": "Essential words and phrases introduced in the overview of the Telugu language.",
+        "items": [
+            {
+                "telugu": "నేను",
+                "phonetic": "Nēnu",
+                "english": "I"
+            },
+            {
+                "telugu": "ఆడతాను",
+                "phonetic": "āḍatānu",
+                "english": "will play / play"
+            },
+            {
+                "telugu": "చేయి",
+                "phonetic": "Chēyi",
+                "english": "Do"
+            },
+            {
+                "telugu": "వద్దు",
+                "phonetic": "waddu",
+                "english": "No / Don't"
+            },
+            {
+                "telugu": "అండి",
+                "phonetic": "aṇḍi",
+                "english": "Polite suffix (Please)"
+            },
+            {
+                "telugu": "మీరు",
+                "phonetic": "Mīru",
+                "english": "You (Formal/Respectful)"
+            },
+            {
+                "telugu": "నువ్వు",
+                "phonetic": "Nuvvu",
+                "english": "You (Informal/Casual)"
+            },
+            {
+                "telugu": "గారు",
+                "phonetic": "gāru",
+                "english": "Honorific suffix (Sir/Ma'am)"
+            },
+            {
+                "telugu": "ధన్యవాదాలు",
+                "phonetic": "dhanyavādālu",
+                "english": "Thank you"
+            }
+        ]
+    },
+    {
+        "level": 2,
+        "type": "fillblank",
+        "label": "Fill in the Blank",
+        "description": "Practice sentence structure, suffixes, and formality levels.",
+        "items": [
+            {
+                "id": "q1",
+                "prompt": "In Telugu, the sentence 'I play cricket' is structured as 'Nēnu cricket '.",
+                "blank": "āḍatānu",
+                "phonetic": "āḍatānu",
+                "options": [
+                    "āḍatānu",
+                    "chēyi",
+                    "mīru",
+                    "waddu"
+                ],
+                "explanation": "Telugu follows a Subject-Object-Verb (S-O-V) order, so the verb 'play' (āḍatānu) comes at the end."
+            },
+            {
+                "id": "q2",
+                "prompt": "To say 'Please do' politely, you add the suffix '-aṇḍi' to 'chēyi' to get 'Chēy'.",
+                "blank": "aṇḍi",
+                "phonetic": "aṇḍi",
+                "options": [
+                    "waddu",
+                    "aṇḍi",
+                    "gāru",
+                    "nuvvu"
+                ],
+                "explanation": "The suffix '-aṇḍi' is used to make a command or request polite or formal."
+            },
+            {
+                "id": "q3",
+                "prompt": "When speaking to an elder like Murthy, you should address him as 'Murthy_______'.",
+                "blank": "gāru",
+                "phonetic": "gāru",
+                "options": [
+                    "nuvvu",
+                    "waddu",
+                    "gāru",
+                    "aṇḍi"
+                ],
+                "explanation": "'-gāru' is a common honorific suffix added to names to show respect, similar to 'Sir' or 'Ji'."
+            },
+            {
+                "id": "q4",
+                "prompt": "If you are speaking to a close friend of the same age, the correct word for 'You' is '_______'.",
+                "blank": "Nuvvu",
+                "phonetic": "Nuvvu",
+                "options": [
+                    "Mīru",
+                    "Nuvvu",
+                    "Nēnu",
+                    "Gāru"
+                ],
+                "explanation": "'Nuvvu' is the informal version of 'you' used for friends or younger people."
+            }
+        ]
+    },
+    {
+        "level": 3,
+        "type": "tips",
+        "label": "Grammar & Tips",
+        "description": "Key structural and phonetic features of Telugu explained.",
+        "items": [
+            {
+                "id": "t1",
+                "title": "Sentence Structure (S-O-V)",
+                "body": "Unlike English (Subject-Verb-Object), Telugu uses Subject-Object-Verb. You announce the characters first, then the object they are interacting with, and finally the action.",
+                "example": {
+                    "english": "I play cricket.",
+                    "telugu": "నేను క్రికెట్ ఆడతాను",
+                    "phonetic": "Nēnu cricket āḍatānu."
+                },
+                "category": "Grammar"
+            },
+            {
+                "id": "t2",
+                "title": "Agglutination (Stacking Suffixes)",
+                "body": "Telugu is an agglutinative language. Meanings are modified by 'stacking' suffixes onto a root word in a predictable, algorithmic way. This can create long words that represent entire phrases.",
+                "example": {
+                    "english": "Please do not do.",
+                    "telugu": "చేయవద్దండి",
+                    "phonetic": "Chēywaddaṇḍi (Chēyi + waddu + aṇḍi)"
+                },
+                "category": "Grammar"
+            },
+            {
+                "id": "t3",
+                "title": "Retroflex Sounds",
+                "body": "Telugu features retroflex consonants (ṭ, ḍ, ṇ, ļ). To pronounce these, curl the tip of your tongue back to touch the roof of your mouth. In transliteration, these are marked with a dot underneath.",
+                "example": {
+                    "english": "Similar to 't' in the American pronunciation of 'city'.",
+                    "telugu": "ట, డ, ణ, ళ",
+                    "phonetic": "ṭa, ḍa, ṇa, ļv"
+                },
+                "category": "Pronunciation"
+            },
+            {
+                "id": "t4",
+                "title": "Formality Levels",
+                "body": "Telugu has strict formality levels for 'You'. 'Mīru' is formal/respectful (elders, strangers), while 'Nuvvu' is informal/casual (friends, younger people). Using the wrong one can be seen as impolite.",
+                "example": {
+                    "english": "You (formal) vs You (informal)",
+                    "telugu": "మీరు vs నువ్వు",
+                    "phonetic": "Mīru vs Nuvvu"
+                },
+                "category": "Social Context"
+            }
+        ]
+    }
+]
